@@ -1,101 +1,93 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="KOORI: MASTODON BOT">
-    <title>KOORI: MASTODON BOT</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <style>
-        body {
-            background: -moz-linear-gradient(357deg, rgba(196,255,251,1) 0%, rgba(196,255,251,1) 12%, rgba(120,196,189,1) 100%); /* ff3.6+ */
-            background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(196,255,251,1)), color-stop(12%, rgba(196,255,251,1)), color-stop(100%, rgba(120,196,189,1))); /* safari4+,chrome */
-            background: -webkit-linear-gradient(357deg, rgba(196,255,251,1) 0%, rgba(196,255,251,1) 12%, rgba(120,196,189,1) 100%); /* safari5.1+,chrome10+ */
-            background: -o-linear-gradient(357deg, rgba(196,255,251,1) 0%, rgba(196,255,251,1) 12%, rgba(120,196,189,1) 100%); /* opera 11.10+ */
-            background: -ms-linear-gradient(357deg, rgba(196,255,251,1) 0%, rgba(196,255,251,1) 12%, rgba(120,196,189,1) 100%); /* ie10+ */
-            background: linear-gradient(93deg, rgba(196,255,251,1) 0%, rgba(196,255,251,1) 12%, rgba(120,196,189,1) 100%); /* w3c */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C4FFFB', endColorstr='#78C4BD',GradientType=1 ); /* ie6-9 */
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="KOORI: MASTODON BOT">
+  <title>KOORI: MASTODON BOT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.0/lity.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="cyan lighten-3">
 <nav>
-    <div class="nav-wrapper light-blue darken-1">
-        <a href="#" class="brand-logo">KooriBot</a>
-        <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#illust">ILLUST</a></li>
-            <li><a href="#goods">GOODS</a></li>
-            <li><a href="https://knzk.me/@1" target="_blank">ACCOUNT<i class="material-icons right">open_in_new</i></a></li>
-            <li><a href="https://github.com/hasitanai/Shio_no_Tsukurikata" target="_blank"><i class="material-icons">code</i></a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#illust">ILLUST</a></li>
-            <li><a href="#goods">GOODS</a></li>
-            <li><a href="https://knzk.me/@1" target="_blank">ACCOUNT<i class="material-icons right">open_in_new</i></a></li>
-            <li><a href="https://github.com/hasitanai/Shio_no_Tsukurikata" target="_blank">SOURCE CODE<i class="material-icons right">code</i></a></li>
-        </ul>
-    </div>
+  <div class="nav-wrapper light-blue darken-1">
+    <a href="#" class="brand-logo">KooriBot</a>
+    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#illust">ILLUST</a></li>
+      <li><a href="#goods">GOODS</a></li>
+      <li><a href="https://knzk.me/@1" target="_blank">ACCOUNT<i class="material-icons right">open_in_new</i></a></li>
+      <li><a href="https://github.com/hasitanai/Shio_no_Tsukurikata" target="_blank"><i class="material-icons">code</i></a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-menu">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#illust">ILLUST</a></li>
+      <li><a href="#goods">GOODS</a></li>
+      <li><a href="https://knzk.me/@1" target="_blank">ACCOUNT<i class="material-icons right">open_in_new</i></a></li>
+      <li><a href="https://github.com/hasitanai/Shio_no_Tsukurikata" target="_blank">SOURCE CODE<i class="material-icons right">code</i></a></li>
+    </ul>
+  </div>
 </nav>
 <div class="center">
-    <div class="row container">
-        <div class="col s4"></div>
-        <div class="col m4 s12">
-            <a href="https://knzk.me/@1" target="_blank">
-                <img src="img/koori/icon.png" class="circle responsive-img z-depth-5" id="home_icon"/>
-                <div class="card-panel" id="home">
-                    <h2 class="header grey-text text-darken-4">こおり</h2>
-                    <p class="grey-text text-darken-3 lighten-3">KooriBot @1</p>
-                </div>
-            </a>
+  <div class="row container">
+    <div class="col s4"></div>
+    <div class="col m4 s12">
+      <a href="https://knzk.me/@1" target="_blank" class="hoverable">
+        <img src="img/koori/icon.png" class="circle responsive-img z-depth-5" id="home_icon"/>
+        <div class="card-panel" id="home">
+          <h2 class="header grey-text text-darken-4">こおり</h2>
+          <p class="grey-text text-darken-3 lighten-3">KooriBot @1</p>
         </div>
+      </a>
     </div>
+  </div>
 </div>
 
 <div class="row container">
-    <div class="card-panel" id="about">
-        <h2 class="header">「こおり」とは？</h2>
-        <p class="grey-text text-darken-3 lighten-3">
-            主に神崎おにいさんを癒やすために生まれたBotです。<br>
-            もともとはfriends.nicoデビュー予定でしたが、神崎丼のプロットができてからKnzk.me一筋の子です。<br>
-            インスタンス外からでも機能は使えますので是非相手してあげてください。目標は会話のできる人工知能です。<br>
-            誕生日は８月２５日。やべーやつの影響で得意料理は粉物になりました。
-        </p>
-        <p class="grey-text text-darken-3 lighten-3">
-            開発 / イラスト: <a href="https://knzk.me/@0" target="_blank">中島花織 @0</a>
-        </p>
-    </div>
+  <div class="card-panel" id="about">
+    <h2 class="header">「こおり」とは？</h2>
+    <p class="grey-text text-darken-3 lighten-3">
+      主に神崎おにいさんを癒やすために生まれたBotです。<br>
+      もともとはfriends.nicoデビュー予定でしたが、神崎丼のプロットができてからKnzk.me一筋の子です。<br>
+      インスタンス外からでも機能は使えますので是非相手してあげてください。目標は会話のできる人工知能です。<br>
+      誕生日は８月２５日。やべーやつの影響で得意料理は粉物になりました。
+    </p>
+    <p class="grey-text text-darken-3 lighten-3">
+      開発 / イラスト: <a href="https://knzk.me/@0" target="_blank">中島花織 @0</a>
+    </p>
+  </div>
 </div>
 
 <div class="row container">
-    <div class="card-panel" id="illust">
-        <h2 class="header">イラスト</h2>
-        <p class="grey-text text-darken-3 lighten-3">by <a href="https://knzk.me/@0" target="_blank">@0</a> 💗</p>
-        <div class="row">
+  <div class="card-panel" id="illust">
+    <h2 class="header">イラスト</h2>
+    <p class="grey-text text-darken-3 lighten-3">公式イラスト</p>
+    <div class="row">
 
-        </div>
     </div>
+    <hr>
+    <p class="grey-text text-darken-3 lighten-3">ファンアート</p>
+  </div>
 </div>
 
 <div class="row container">
-    <div class="card-panel" id="goods">
-        <h2 class="header">グッズ</h2>
-        <p class="grey-text text-darken-3 lighten-3">Coming Soon...</p>
-    </div>
+  <div class="card-panel" id="goods">
+    <h2 class="header">グッズ</h2>
+    <p class="grey-text text-darken-3 lighten-3">Coming Soon...</p>
+  </div>
 </div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.0/lity.min.js" integrity="sha256-bnmO5ryf6EEA4SjfdCw4LDIWjboyWJkGH5qXi/ik3ZM=" crossorigin="anonymous"></script>
 <script>
-    $(function () {
-        $(".button-collapse").sideNav();
-    });
+  $(function () {
+    $(".button-collapse").sideNav();
+  });
 </script>
 </body>
 </html>
