@@ -16,11 +16,14 @@ nav .brand-logo {
   position: relative;
 }
 
+.icon {
+  max-width: 120px !important;
+}
+
 #home_icon {
   position: relative;
   top: 60px;
   z-index: 1;
-  max-width: 120px;
 }
 
 body {

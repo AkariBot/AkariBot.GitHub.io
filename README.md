@@ -1,10 +1,5 @@
 # Knzk.me BotGirls WebSite
 
-**indexが未完成なのでここから飛んでね**
-
-- https://botgirls.github.io/akari.html
-- https://botgirls.github.io/koori.html
-
 ## License
 
 - Webページ ソースコード: [MPL v2.0](LICENSE)

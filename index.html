@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Knzk.me BotGirls WebSite">
+  <title>Knzk.me BotGirls Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    .center {
+      position: absolute;
+      top: 28%;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    @media only screen and (max-width: 750px) {
+      .center {
+        position: inherit;
+      }
+
+      .hide-sp {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body class="purple lighten-3">
+<nav>
+  <div class="nav-wrapper deep-purple darken-1">
+    <a href="#" class="brand-logo"><span class="hide-sp">Knzk.me </span>BotGirls</a>
+    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="https://knzk.me/" target="_blank">Knzk.me<i class="material-icons right">open_in_new</i></a></li>
+      <li><a href="https://github.com/BotGirls" target="_blank"><i class="material-icons">code</i></a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-menu">
+      <li><a href="https://knzk.me/" target="_blank">Knzk.me<i class="material-icons right">open_in_new</i></a></li>
+      <li><a href="https://github.com/BotGirls" target="_blank"><i class="material-icons">code</i></a></li>
+    </ul>
+  </div>
+</nav>
+<div class="center">
+  <div class="row container">
+    <div class="col s2"></div>
+    <div class="col m4 s12">
+      <a href="akari.html" class="hoverable">
+        <div class="card-panel">
+          <img src="img/akari/icon.png" class="circle responsive-img z-depth-5 icon"/>
+          <h2 class="header grey-text text-darken-4">あかり</h2>
+          <p class="grey-text text-darken-3 lighten-3">AkariBot @yuzu</p>
+        </div>
+      </a>
+    </div>
+    <div class="col m4 s12">
+      <a href="koori.html" class="hoverable">
+        <div class="card-panel">
+          <img src="img/koori/icon.png" class="circle responsive-img z-depth-5 icon"/>
+          <h2 class="header grey-text text-darken-4">こおり</h2>
+          <p class="grey-text text-darken-3 lighten-3">KooriBot @1</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script>
+  $(function () {
+    $(".button-collapse").sideNav();
+  });
+</script>
+</body>
+</html>
